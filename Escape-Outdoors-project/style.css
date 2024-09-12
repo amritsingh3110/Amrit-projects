@@ -3,7 +3,6 @@
   --primary2-color: #062033;
   --secondary-color: #fff;
 }
-
 .btn {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -15,29 +14,23 @@
   line-height: 52px; /* 325% */
   letter-spacing: 0.5px;
 }
-
 button {
   border: none;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 a {
   text-decoration: none;
 }
-
 li {
   list-style: none;
 }
-
 #container {
   width: 100%;
   margin: auto;
@@ -53,7 +46,7 @@ li {
     width: 1460px;
   }
 }
-
+/* HEADER PART --------------------------------------------------------- */
 .header-logo {
   display: flex;
   width: 109px;
@@ -90,7 +83,7 @@ li {
 .header-content .header-content-heart {
   display: none;
 }
-
+ /* NAV-BAR PART ------------------------------------------------------ */
 nav.show {
   transform: translateY(0);
   opacity: 1;
@@ -178,7 +171,7 @@ nav ul li a:hover::after {
 .hamburger-menu-line--bottom {
   top: 12px;
 }
-
+/* SECTION 1 FATHTHERS DAY  ---------------------------------------------------------------------- */
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -209,7 +202,7 @@ nav ul li a:hover::after {
   line-height: 120%; /* 16.8px */
   text-decoration-line: underline;
 }
-
+/* SECTION 2 GALLERY------------------------------------------------------------------- */
 .gallery-wrapper {
   display: flex;
   flex-direction: column;
@@ -289,7 +282,7 @@ figcaption .shop-now:hover {
   align-self: stretch;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url(./img/gallery3.png) lightgray 50%/cover no-repeat;
 }
-
+/* SECTION OUTDOOR FASHION --------------------------------------------------------------------- */
 .outdoor-fashion {
   background: #F9F4E5;
 }
@@ -334,7 +327,7 @@ figcaption .shop-now:hover {
   width: 100%;
   height: 100%;
 }
-
+ /* SECTION TOP-CATAGORIES */
 .category-grid {
   width: 100%;
   display: flex;
@@ -371,7 +364,7 @@ figcaption .shop-now:hover {
   font-size: 16px;
   border: 1px solid #B3B7BC;
 }
-
+ /* SECTION  NEW ARRIVAL AND BEST SELLERS */
 .carousel-container {
   width: 100%;
   margin: 0 auto 120px;
@@ -413,6 +406,7 @@ figcaption .shop-now:hover {
     flex: 0 0 50%;
   }
 }
+    /* SECTION DISCOVERY------------------------------------------------------------------------- */
 .Discover {
   width: 100%;
   height: 380px;
@@ -448,6 +442,7 @@ figcaption .shop-now:hover {
   padding: 0 10px 0 100px;
 }
 
+/* SECTION BAGPACKS --------------------------------------------- */
 .product-container {
   padding: 120px 20px;
   overflow: auto;
@@ -517,7 +512,7 @@ figcaption .shop-now:hover {
   border: 1px solid #DCD5C4;
   background: var(--secondary-color);
 }
-
+/* SECTION FEATURED --------------------------------------------------------------------------------------- */
 .featured-backpack {
   background: url(./img/bagpacks.png) lightgray 50%/cover no-repeat;
 }
@@ -598,7 +593,7 @@ figcaption .shop-now:hover {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-
+/* SECTION promo-banner        ------------------------------------------------------------ */
 .promo-banner-container {
   display: flex;
   flex-direction: column;
@@ -609,7 +604,7 @@ figcaption .shop-now:hover {
   width: 100%;
   height: 100%;
 }
-
+   /* SECTION LATEST STORIES  ------------------------------------------------------------------------------- */
 .stories-header {
   display: flex;
   justify-content: space-between;
@@ -710,6 +705,8 @@ figcaption .shop-now:hover {
     display: none;
   }
 }
+
+/* FOOTER HERE ---------------------------------------------------------------------- */
 .footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -782,54 +779,15 @@ figcaption .shop-now:hover {
 .footer .footer-container .subscribe {
   margin-bottom: 20px;
 }
-.footer .footer-container .contact-us .footer-logo,
-.footer .footer-container .contact-us .contact-info,
-.footer .footer-container .contact-us .customer-support,
-.footer .footer-container .contact-us .social-icons,
-.footer .footer-container .contact-us p,
-.footer .footer-container .contact-us .subscribe-form,
-.footer .footer-container .contact-us .privacy,
-.footer .footer-container .subscribe .footer-logo,
-.footer .footer-container .subscribe .contact-info,
-.footer .footer-container .subscribe .customer-support,
-.footer .footer-container .subscribe .social-icons,
-.footer .footer-container .subscribe p,
-.footer .footer-container .subscribe .subscribe-form,
-.footer .footer-container .subscribe .privacy {
+.footer  .footer-logo, .customer-support, .social-icons, p, .subscribe-form, .privacy, .footer-logo, .contact-info, .customer-support, .social-icons, p,.subscribe-form,.privacy {
   margin-bottom: 10px;
 }
-.footer .footer-container .contact-us .footer-logo a,
-.footer .footer-container .contact-us .contact-info a,
-.footer .footer-container .contact-us .customer-support a,
-.footer .footer-container .contact-us .social-icons a,
-.footer .footer-container .contact-us p a,
-.footer .footer-container .contact-us .subscribe-form a,
-.footer .footer-container .contact-us .privacy a,
-.footer .footer-container .subscribe .footer-logo a,
-.footer .footer-container .subscribe .contact-info a,
-.footer .footer-container .subscribe .customer-support a,
-.footer .footer-container .subscribe .social-icons a,
-.footer .footer-container .subscribe p a,
-.footer .footer-container .subscribe .subscribe-form a,
-.footer .footer-container .subscribe .privacy a {
+.footer a {
   color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.3s;
 }
-.footer .footer-container .contact-us .footer-logo a:hover,
-.footer .footer-container .contact-us .contact-info a:hover,
-.footer .footer-container .contact-us .customer-support a:hover,
-.footer .footer-container .contact-us .social-icons a:hover,
-.footer .footer-container .contact-us p a:hover,
-.footer .footer-container .contact-us .subscribe-form a:hover,
-.footer .footer-container .contact-us .privacy a:hover,
-.footer .footer-container .subscribe .footer-logo a:hover,
-.footer .footer-container .subscribe .contact-info a:hover,
-.footer .footer-container .subscribe .customer-support a:hover,
-.footer .footer-container .subscribe .social-icons a:hover,
-.footer .footer-container .subscribe p a:hover,
-.footer .footer-container .subscribe .subscribe-form a:hover,
-.footer .footer-container .subscribe .privacy a:hover {
+.footer  {
   color: #ccc;
 }
 .footer .footer-container .contact-us .social-icons,
