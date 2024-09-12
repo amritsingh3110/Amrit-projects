@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+                //     header here   ----------------------------------------------------------------------------------------------------
+                .header{
+                    width: 100%;
+                    position: absolute;       
+                       }
+            .hcontainer{z-index: 999;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    
+                 .hamburger{
+                    position: absolute;
+                            top: 25px;
+                            right: 25px;
+                            width: 30px;
+                            height: 25px;
+                            display: none;
+                 }
+
+                        input{
+                            position: absolute;
+                            top: 25px;
+                            right: 25px;
+                            width: 30px;
+                            height: 25px;
+                            border: none;
+                            opacity: 0;
+                            display: none;
+                        }
+                        
+                    
+                    .logo{
+                        height: 40px;
+                        width: 150px;
+                        
+                    }
+            ul{
+                        display: flex;
+                        gap: 60px;
+                        li{
+                            display: inline-block;
+                            a{
+                                font-weight: 700;
+                                color: #fff;
+                                cursor: pointer;
+                                padding-bottom: 10px;
+                                transition: border-bottom 0.1s, color 0.5s;
+                                &:hover{border-bottom: 4px solid #fff;
+                                    // transition: border-bottom 0.1s, color 0.1s;
+                            }
+                        }
+                    }
+                }
+            }
+                 //     section 1 here here   ----------------------------------------------------------------------------------------------------
+                 .section1{
+                    background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url(./img/hero-bg.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                   
+                }
+                #container{
+                   
+                    max-width: 1100px;
+                    width: 100%;
+                    margin: 0 auto;
+                    height: -webkit-fill-available;
+                    padding: 40px 20px;
+                     position: relative;
+                     overflow: hidden;
+                    // border: #333 2px solid;
+                }
+                
+                .s1container{ 
+                    display: grid;
+                    align-items: center;
+                    padding: 25px;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-auto-rows: max-content;
+                    // row-gap: 30px;
+                    h1{
+                        margin-top: 120px;
+                        // font-size: 47px;
+                        font-size: 52px;
+                        font-weight: 700;
+                        grid-area: a;
+                        color: white;
+                        margin-bottom: 40px;
+                      }
+                    p{
+                        // font-size: 34px;
+                        // opacity: 0.5;
+                        // color: #fff;
+                        font-size: 36px;
+                        line-height: 40px;
+                        font-family: 'HelveticaNeue-Thin';
+                        color: white;
+                        margin-bottom: 55px;
+                        grid-area: b;
+                      }
+                    .link{
+                        margin: 10px 0 20px;
+                       
+                       a{
+                        padding: 23px 35px;
+                    background: #282828;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 50px;
+                    transition: 0.3s;
+                    img{
+                        vertical-align: middle;
+                    padding-right: 20px;
+                    }
+                       }
+                       grid-area: c;
+                      }  
+                      grid-template-areas: "a ."
+                                           "b ."
+                                           "c .";
+                }
+                .figure{
+                    animation: iphone 1.5s ease-in 1s;
+                    position: absolute;
+                    top: 25%;
+                    left: 60%;
+                    &_img2{
+                        left: -7px;
+                    position: absolute;
+                    top: 106px;
+                    width: 287px;
+                    animation: screen 3s ease-in-out 1s;
+                    transition:  1s ease-in-out ;
+                    &:hover{
+                        opacity:  0;
+                    }
+                    }
+                    &_img1{
+                        position: absolute;
+                        left: -80px;
+                        width: 450px;
+                        
+                    }
+                }
+                
+                //  screen on iphone
+                
+                @keyframes screen{
+                    0%{
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 0;
+                    }
+                    
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                //  animation iphone
+                @keyframes iphone{
+                    0%{
+                        transform: translateY(560px);
+                        opacity: 1;
+                    }
+                    80%{
+                        transform: translateY(-20px);
+                        opacity: 1;
+                    }
+                    
+                    100%{
+                        transform: translateY(0px);
+                        opacity: 1;
+                    }
+                }
+         
+               //     section 2 here here   ----------------------------------------------------------------------------------------------------
+                                 .s2container{
+                                    background-color: #fff;
+                                    text-align: center;
+                                    padding: 50px;
+                                    h2{
+                                        font-size: 50px;
+                                        color: gray;
+                                        padding: 20px;
+                                    }
+                                    p{
+                                        font-size: 20px;
+                                    }
+                                    ul{
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                                        .left{
+                                                animation: lefts 2s 1s;
+                                            }
+                                            .center{
+                                                animation: centers 2s 1s;
+                                            }
+                                            .right{
+                                                animation: rights 2s 1s;
+                                            }
+                                        li{
+                                            transition: all 1s;
+                                            &:hover{
+                                                scale: 1.1;
+                                                img{
+                                                    transform: scale(1.1);
+                                                }
+                                            }
+                                            padding: 50px;
+                                            img{
+                                                width: 150px;
+                                                height: 150px;
+                                                transition: all 1s;
+                                            }
+                                            h3{
+                                                padding: 20px;
+                                                font-weight: 800;
+                                            }
+                                            p{
+                                                font-size: 15.1px;
+                                               color: rgb(144, 144, 144);
+                                            }
+                                        }
+                                    }
+                                 }
+
+                                //  left center right move key frames
+                                @keyframes lefts {
+                                    0% {
+                                        transform: translateX(-500px);
+                                        opacity: 0;
+                                    }
+                                    80%{
+                                        transform: translateY(-20px);
+                                        transform: scale(1.2);
+                                    }
+                                    100%{
+                                        transform: translateX(0px);
+                                        opacity: 1;
+                                    }
+                                }
+                                @keyframes centers {
+                                    0% {
+                                        transform: translateY(400px);
+                                        opacity: 0;
+                                    }
+                                    80%{
+                                        transform: translateY(-20px);
+                                        transform: scale(1.2);
+                                    }
+                                    100%{
+                                        transform: translateX(0px);
+                                        opacity: 1;
+                                    }
+                                }
+                                @keyframes rights {
+                                    0% {
+                                        transform: translateX(500px);
+                                        opacity: 0;
+                                    }
+                                    80%{
+                                        transform: translateY(-20px);
+                                        transform: scale(1.2);
+                                    }
+                                    100%{
+                                        transform: translateX(0px);
+                                        opacity: 1;
+                                    }
+                                }
+                                 //     section 3 here here   ----------------------------------------------------------------------------------------------------
+
+ .section3{
+    background: url(./img/nose-bg.png);
+    background-size: cover;
+    
+    background-position: center;
+    
+}
+.content{
+    animation: contents 2s 1s;
+    width: 50%;
+    padding: 200px 0px;
+   h2{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+    span{
+        color: #f55150;
+    }
+   }
+   p{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'HelveticaNeue-Thin';
+    margin-bottom: 50px;
+   }
+   .download-btn {
+    padding: 15px;
+    background: #d9332d;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 20px;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+}
+//  joker content animation
+  @keyframes contents {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    90%{
+        transform: translateX(50px);
+        // transform: scale(1.1);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+            
+                                 //     section 4 here here   ----------------------------------------------------------------------------------------------------
+                                        .sections4{
+                                            background-color: rgb(46, 46, 56);
+                                        }
+                                 .s4container{
+                                    padding: 120px 120px;
+                                            color: #fff;
+                                            padding: 100px 20px;
+                                            .logo2{
+                                                margin-top: 120px;
+                                            }
+                                            .ul{
+                                                margin: 77px 0;
+                                                display: grid;
+                                                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                                                &_li{
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 30px;
+                                                    padding: 20px;
+                                                    figure{
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        gap: 20px;
+                                                        figcaption{
+                                                            font-size: 18px;
+                                                        }
+                                                    }
+                                                    &_p1{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 5px;
+                                                        .s2{
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                    &_p2{
+                                                        font-size: 19px;
+                                                    }
+                                                    &_bigp{
+                                                        font-size: 14.4px;
+                                                        font-style: italic;
+                                                        line-height: 1.8;
+                                                        font-weight: 100;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        // footer here --------------------------------------------------------------------------------------------------------------
+                                        footer{
+                                            background: rgb(215, 222, 220);
+                                        }
+                                        .fcontainer{
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                            flex-wrap: wrap;
+                                            gap: 40px;
+                                            padding: 20px;
+                                            align-items: center;
+                                            p{
+                                                display: flex;
+                                                flex-direction: row;
+                                                flex-wrap: wrap;
+                                                gap: 40px;
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        // MEDIA QUERIES HERE 800PX
+                                        @media (max-width: 800px){
+                                            figure{
+                                                display: none;
+                                            }
+                                            .s1container{
+                                                grid-template-columns: 1fr;
+                                            }
+                                            .content{
+                                                width: 100%;
+                                            }
+                                            footer{
+                                                p{
+                                                    text-align: center;
+                                                    span{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        
+                                   // MEDIA QUERIES HERE 800PX
+                                        @media (max-width: 500px){
+                                            .s1container {
+                                            h1 {
+                                                font-size: 35px;
+                                            }
+                                            p {
+                                                font-size: 25px;
+                                            }
+                                                         }
+
+                                        .s2container{
+                                            h2 {
+                                                font-size: 40px;
+                                                padding: 20px 0;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                             line-height: 1.5;
+                                        }
+                                                    }
+                                                         
+                                            .content{
+                                                h2{
+                                                    font-size: 32px;
+                                                }
+                                                p{
+                                                    font-size: 19px;
+                                                }
+                                            }
+                                        
+                                        }
+
+
+
+                                        //  last part navbar 768px here
+                                          @media (max-width: 768px){
+                                            .hcontainer{
+                                                flex-direction: column;
+                                                gap: 20px;
+                                                input , .hamburger{
+                                                    display: inline-block;
+                                                }
+                                                input:checked ~ .nav{
+                                                    visibility: visible;
+                                                    scale: 1;
+                                                    opacity: 1;
+                                                    background: li;
+                                                   
+                                                    
+                                                }
+                                               .nav{
+                                                text-align: center;
+                                                transition: all ease-in-out 1s;
+                                                scale: 10;
+                                                opacity: 0;
+                                                visibility: hidden;
+
+
+                                                ul{
+                                                    flex-direction: column;
+                                                    gap: 0;
+                                                    li{
+                                                        padding: 30px;
+                                                        a{
+                                                            padding: 10px;
+                                                            font-size: 20px;
+                                                            color: gray;
+                                                        }
+                                                    }
+                                                }
+                                               }
+                                            }
+                                          }
+                                            

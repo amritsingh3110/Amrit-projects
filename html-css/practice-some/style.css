@@ -1,0 +1,11 @@
+section{
+    max-width: 100%;
+    background: yellowgreen;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 50px;
+    background: violet;
+    text-align: center;
+}

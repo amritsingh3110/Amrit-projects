@@ -1,0 +1,294 @@
+:root {
+  --primary-color: #e94707;
+  --secondary-color: #ffbc00;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --max-width: 1100px;
+  --my-color: #FFFDD0;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+p {
+  line-height: 1.3;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.fa, .fab, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.light-theme {
+  background: #fff;
+  color: #333;
+}
+
+.dark-theme {
+  background: #333;
+  color: #fff;
+}
+
+.py {
+  padding: 2rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header nav {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.header nav li {
+  padding: 1rem 1.5rem;
+}
+.header nav li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+.header nav li a:hover {
+  border-color: #ccc;
+}
+.header nav li a.current {
+  border-color: var(--secondary-color);
+}
+
+.header1 {
+  background-image: url(./img/showcase.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+}
+.header1 nav {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header1 nav .logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header1 nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.header1 nav li {
+  padding: 1rem 1.5rem;
+}
+.header1 nav li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+.header1 nav li a:hover {
+  border-color: #ccc;
+}
+.header1 nav li a.current {
+  border-color: var(--secondary-color);
+}
+
+.section {
+  background-image: url(./img/showcase.jpg);
+  height: 100vh;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section .scontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20%;
+}
+.section .scontent p {
+  margin-bottom: 2rem;
+}
+.section .scontent a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 1s;
+}
+.section .scontent a:hover {
+  background: var(--secondary-color);
+}
+
+.section1 {
+  text-align: center;
+}
+.section1 .bline {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+.section1 h2 {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.section1 .s1content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+}
+.section1 .s1content i {
+  color: var(--secondary-color);
+  padding-bottom: 0.4rem;
+}
+
+.section2 .stats {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1FR);
+}
+.section2 i {
+  font-size: 3rem;
+}
+.section2 .stitle {
+  font-size: 1.4rem;
+}
+.section2 .sno {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.section2 li {
+  font-size: 1.5rem;
+}
+.section2 .stats li {
+  line-height: 2;
+}
+.section2 .stats div:nth-child(odd) {
+  background: #f4f4f4;
+}
+.section2 .stats div:nth-child(even) {
+  background: #ccc;
+}
+.section2 .stats div {
+  padding: 3rem 0;
+}
+
+.section3 {
+  text-align: center;
+}
+.section3 .s3content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.section3 .s3content i {
+  background: #333;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  padding: 2rem;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+}
+
+.asection {
+  text-align: center;
+}
+
+.footer .fcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer i {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}/*# sourceMappingURL=main.css.map */

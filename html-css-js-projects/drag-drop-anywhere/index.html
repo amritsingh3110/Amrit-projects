@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Example</title>
+    <style>
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+
+<div class="draggable"></div>
+
+<script>
+    const draggableElement = document.querySelector('.draggable');
+    let offsetX, offsetY;
+
+    draggableElement.addEventListener('mousedown', (event) => {
+        // Get the mouse position relative to the element
+        offsetX = event.clientX - draggableElement.offsetLeft;
+        offsetY = event.clientY - draggableElement.offsetTop;
+        draggableElement.innerHTML = `${draggableElement.offsetLeft},${event.clientX},${offsetX}`
+        
+        // Change the cursor to grabbing
+        draggableElement.style.cursor = 'grabbing';
+
+        // Add event listeners for moving and dropping the element
+        document.addEventListener('mousemove', moveElement);
+        document.addEventListener('mouseup', dropElement);
+    });
+
+    function moveElement(event) {
+        // Update the element's position based on mouse movement
+        draggableElement.style.left = `${event.clientX - offsetX}px`;
+        draggableElement.style.top = `${event.clientY - offsetY}px`;
+    }
+
+    function dropElement() {
+        // Remove the event listeners when the mouse button is released
+        document.removeEventListener('mousemove', moveElement);
+        document.removeEventListener('mouseup', dropElement);
+
+        // Reset the cursor to grab
+        draggableElement.style.cursor = 'grab';
+    }
+</script>
+
+</body>
+</html>

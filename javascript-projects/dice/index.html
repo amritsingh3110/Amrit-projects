@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DICE GAME</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+               #player1,#player2{
+                display: inline-block;
+                width: 200px;
+                height: 160px;
+                border: 1px solid black;
+                padding: 5px;
+                margin: 25px;
+                text-align: center;
+                font-size: 7em;
+                color: cornflowerblue;
+                background-color: coral;
+                
+               }
+               #output {
+                width: 550px;
+                text-align: center;
+                font-size: 2em;
+                color: antiquewhite;
+                background-color: rgb(160, 116, 201);
+            }
+            button {
+                padding: 10px;
+                text-align: center;
+                width: 450px;
+               color: crimson;
+                background-color: burlywood;
+            }
+            /* .output {
+                width: 450px;
+                text-align: center;
+                font-size: 2em;
+            }
+            
+            button {
+                padding: 10px;
+                text-align: center;
+                width: 450px;
+            }
+            .dicer{
+                border: 1px solid black;
+                width:90px;
+                height:90px;
+                padding:2px;
+                border-radius: 10px;
+            }
+            .black {
+                background-color: black;
+            }
+            .white {
+                background-color: white;
+            }
+            .dot {
+                height: 25px;
+                width:25px;
+                border-radius: 50%;
+                display: inline-block;
+                margin:2px;
+            }
+            .viewer{
+                display: inline-block;
+                width:211px;
+                height:150px;
+                border: 1px solid black;
+                padding:5px;
+            }
+            .namer{
+                display: inline-block;
+                font-family: cursive;
+                font-size: 20px;
+                margin-bottom: 10px;
+            } */
+        </style>
+    </head>
+    <body>
+        <div id="game-area">
+            <div id="output">START THE GAME</div>
+            <div id="player1"></div>
+            <div id="player2"></div>
+        </div>
+        <button type="button">ROLL</button>
+        <script src="dice.js"></script>
+    </body>
+</html>

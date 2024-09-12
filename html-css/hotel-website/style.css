@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7em;
+}
+#navbar a{
+    color: gray;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+h1 h1 h3{
+    padding-bottom: 20px;
+}
+p{
+    margin: 10px 0;
+}
+#navbar{
+    overflow: auto;
+    background-color: black;
+}
+#navbar h1{
+    float: left;
+    padding: 20px;
+
+}
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover,#navbar ul li a.home {
+    background-color: #333;
+    color: orange;
+}
+#showcase {
+    background-image: url(showcase.jpg); 
+    
+    text-align: center;
+    padding: 100px;
+    color: white;
+ 
+}
+.enjoy{
+    color: orange;
+}
+.para{
+    font-size: 20px;
+    
+}
+.link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 13px 20px;  
+}
+.link:hover{
+    background-color: black;
+ color: orange;
+}
+
+
+#showcase h1{
+    font-size: 60px;
+    line-height: 1.3em;
+    
+}
+#showcase p{
+    padding-bottom: 20px;
+    
+    line-height: 1.5em;
+}
+
+
+/*-------------------------------- home 2nd part---------------------------------------------------------------------------------------------*/
+
+#homeinfo{
+    height: 400px;
+}
+
+#homeinfo .imageinfo{
+    float: left;
+    width: 50%;
+    background: url(./photo-1.jpg) no-repeat 
+    center center/cover; 
+    min-height: 100%;
+}
+#homeinfo .contentinfo{
+    width: 50%;
+float: right;
+ background-color: black; 
+color: white;
+text-align: center;
+line-height: 1.5em;
+min-height: 100%;
+padding-top: 100px; 
+}
+
+.clr{
+    clear: both;
+}
+.headinginfo{
+    color: orange;
+}
+.linklight{
+    display: inline-block;
+     text-decoration: none; 
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 13px 20px;  
+}
+.linklight:hover{
+    background-color: black;
+ color: orange;
+}
+/* ---------------------------home 3rd part----------------------------------- */
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+box.i{
+    padding-top: 20px;
+}
+.box:nth-child(2){
+    background-color: orange;
+    color: black;
+}
+/* ----------------------------about info part css-------------------------------------------------- */
+#info{
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    
+}
+#info .infoleft{
+    float: left;
+    padding: 20px;
+    width: 50%;
+    padding-left: 100px;
+     min-height: 100%; 
+    
+    
+     
+}
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+#info .infoleft h1{
+    font-size: 40px;
+    color: #333;
+
+}
+#info .infoleft p{
+    padding-top: 20px;
+}
+
+
+#info .inforight{
+    float: right;
+    width: 50%;
+     min-height: 100%;  
+     padding-right: 20px;
+     
+}
+#info .inforight img{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+    padding: 20px;
+    
+}
+.clr{
+    clear: both;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+
+.texts{
+    background: #f7c08a;
+    color: #333;
+    margin: 40px;
+
+    
+}
+
+#textm{
+    height: 600px;
+    background: url(./test-bg.jpg) 
+    center center/cover; 
+    padding: 100px;
+   
+}
+#textm .texts{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+     opacity: 0.9;
+    
+}
+#textm  h1{
+           text-align: center;
+           padding-top: 20px;
+           color: #fff;
+          
+           font-size: 40px;
+}
+#textm .texts img{
+    width: 100px;
+    padding: 10px;
+    float: left;
+    border-radius: 50%;
+    
+
+}
+
+.clr{
+    clear: both;
+}
+
+
+
+
+
+/* -------------------------------------------footer settings---------------------------------------------------- */
+#last{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+/* ---------------------------------------------------contact form--------------------------------------------------------- */
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+#contacts {
+    padding: 10px 120px ;
+}
+#contacts h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+
+}
+
+#contacts .contactf{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contactf input, .contactf textarea {
+width: 100%;
+padding: 10px;
+border: 1px #ddd solid; 
+
+}
+.contactf textarea{
+    height: 200px;
+}
+/* --------------------------details------------------------------------- */
+.box1{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 50px;
+    
+}
+#iconic{
+    background-color: #333;
+    color: white;
+    
+}
+#iconic .box1 p{
+ padding: 20px;   
+}
+
+

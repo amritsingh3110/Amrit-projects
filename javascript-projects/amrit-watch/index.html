@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartphone with Functions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lockScreen" class="screen">
+    <div class="lock-screen-content">
+      <h1>Unlock your phone</h1>
+      <input type="password" id="unlockInput" placeholder="Enter PIN">
+      <button onclick="unlock()">Unlock</button>
+    </div>
+  </div>
+  
+  <div id="homeScreen" class="screen hidden">
+    <header>
+      <h1>Smartphone</h1>
+      <span id="currentTime" class="clock"></span>
+    </header>
+    <main>
+      <div class="app" onclick="openApp('weather')">
+        <img src="icons/weather.png" alt="Weather">
+        <span>Weather</span>
+      </div>
+      <div class="app" onclick="openApp('calculator')">
+        <img src="icons/calculator.png" alt="Calculator">
+        <span>Calculator</span>
+      </div>
+      <div class="app" onclick="openApp('notes')">
+        <img src="icons/notes.png" alt="Notes">
+        <span>Notes</span>
+      </div>
+    </main>
+    <footer>
+      <button onclick="lockScreen()">Lock</button>
+    </footer>
+  </div>
+
+  <div id="weatherApp" class="app-screen hidden">
+    <header>
+      <h1>Weather</h1>
+    </header>
+    <main>
+      <div id="weatherInfo">
+        Loading weather...
+      </div>
+    </main>
+    <footer>
+      <button onclick="closeApp('weather')">Close</button>
+    </footer>
+  </div>
+
+  <div id="calculatorApp" class="app-screen hidden">
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <main>
+      <input type="text" id="calcDisplay" disabled>
+      <div class="calculator-buttons">
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button><br>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button><br>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button><br>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendToDisplay('/')">/</button><br>
+      </div>
+    </main>
+    <footer>
+      <button onclick="closeApp('calculator')">Close</button>
+    </footer>
+  </div>
+
+  <div id="notesApp" class="app-screen hidden">
+    <header>
+      <h1>Notes</h1>
+    </header>
+    <main>
+      <textarea id="userNotes" placeholder="Write your notes here..."></textarea>
+    </main>
+    <footer>
+      <button onclick="saveNotes()">Save</button>
+      <button onclick="closeApp('notes')">Close</button>
+    </footer>
+  </div>
+
+  <script src="watch.js"></script>
+</body>
+</html>

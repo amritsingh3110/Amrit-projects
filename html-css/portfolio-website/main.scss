@@ -1,0 +1,464 @@
+:root {
+    --primary-color: #e94707;
+    --secondary-color: #ffbc00;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+    --my-color: #FFFDD0;
+}
+
+.container{
+        max-width: 1280px;
+        padding: 0 1.5rem;
+        margin: auto;
+        overflow: hidden;
+     }
+     p{
+            line-height: 1.3;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+     }
+     .fa, .fab, .fal, .far, .fas {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+.lead {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.light-theme{
+    background: #fff;
+    color: #333;
+}
+.dark-theme{
+    background: #333;
+    color: #fff;
+}
+.py {
+    padding: 2rem 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+@mixin navbar{
+    nav{
+        padding-top: 1rem;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     .logo{
+         width: 70px;
+         height: 70px;
+         color: #fff;
+         text-transform: uppercase;
+     }
+     ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+     }
+      li{
+         padding: 1rem 1.5rem;
+     }
+      li a{
+         text-decoration: none;
+         color: #fff;
+         text-transform: uppercase;
+         border-bottom: 3px  transparent solid;
+         padding-bottom: 0.5rem;
+         transition: border-color 0.5s;
+         &:hover {
+             border-color: #ccc;
+         }
+         &.current{
+             border-color: var(--secondary-color);
+         }
+     }
+ 
+     }
+   }
+
+
+
+    //  navbar----------------------------------------------------------------------------------------------------------------------
+
+    
+    // HEADERCONTENT---------------
+   .header{
+        position: absolute;
+        width: 100%;
+        @include navbar
+   }
+
+   .header1{
+    background-image: url(./img/showcase.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5.5rem;
+    border-bottom: 3px solid #ffbc00;
+
+    @include navbar
+   }
+
+.section{
+    background-image: url(./img/showcase.jpg);
+     height: 100vh;
+     color: #fff;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat; 
+     
+.scontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20%;
+        p{
+            margin-bottom: 2rem;
+        }
+        a{
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            transition: all 1s;
+            &:hover{
+                background: var(--secondary-color);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SECTION 1 FIRST CONTENT----------------------------------------------------------------------------------------------------------------------------------------------------
+        .section1{
+           
+               text-align: center;
+             .bline{
+                    height: 2px;
+                    width: 3rem;
+                    background: #ffbc00;
+                    display: block;
+                    margin: 0 auto 1rem auto;
+                }
+               h2{
+                    font-size: 2rem;
+                    display: block;
+                    padding-bottom: 0.5rem;
+                    
+                    font-weight: 100;
+                    text-transform: uppercase;
+               }
+               .s1content{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-gap: 1rem;
+                text-align: center;
+                
+                i{
+                    color: var(--secondary-color);
+                    padding-bottom: 0.4rem;
+                }
+                
+               }
+
+        }
+//  SECTION 2 SECOND---------------------------------------------------------------------------------------------------------
+.section2{
+    .stats{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,1FR);
+    }
+   i{
+    font-size: 3rem;
+    
+   }
+    
+    .stitle{
+        font-size: 1.4rem;
+    }
+    .sno{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    
+.stats li {
+    line-height: 2;
+}
+    .stats div:nth-child(odd){
+        background: #f4f4f4;
+    }
+    .stats div:nth-child(even){
+        background: #ccc;
+    }
+    .stats div {
+        padding: 3rem 0;
+    }
+}
+
+// SECTION 3 HOME Part--------------------------------------------------------------------------------------------------------------------
+.section3{
+    text-align: center;
+.s3content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    i{
+        background: #333;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        padding: 2rem;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        // transition: all 1s;
+    }
+}
+
+}
+
+// ABOUT SECTION START------------------------------------------------------------------------------------------------------------------------
+.asection{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// footer---------------------------------------------------------------------------------
+.footer{
+
+ .fcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    i{
+        margin-right: 1rem;
+        border: 2px #fff solid;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+}

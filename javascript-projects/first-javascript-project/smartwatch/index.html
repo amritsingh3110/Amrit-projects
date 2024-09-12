@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SMARTWATCH</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="sty.css">
+    </head>
+    <body>
+    <header><h2>WATCH COLLECTIONS</h2></header>
+    <main>
+        <section class="container">
+            <div class="watch">
+                <i id="apple" class="fa-brands fa-apple" style="color: gray;"></i>
+                <div id="watch-time"></div>
+                <div id="heart-beat">
+                    <i class="fa-solid fa-heart-pulse fa-beat fa-3x " style="color: #ff052b;"></i>
+                    <span class="random">78</span>
+                </div>
+                <img src="./img/black-smart.png" alt="" id="black">
+                <img src="./img/blue-smart.png" alt="" id="blue">
+                <img src="./img/pink-smart.png" alt="" id="pink">
+                <img src="./img/purple-smart.png" alt="" id="purple">
+                <img src="./img/red-smart.png" alt="" id="red">
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <h1>FitBit 19-The Smartest Watch</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quod consequuntur nobis! Optio itaque at nam quas nemo.</p>
+                    </li>
+                    <li>
+                        <h3>Select color</h3>
+                        <ul class="selectcolor">
+                            <li onclick="show(black)" id="blacks" class="colors"></li>
+                            <li onclick="show(blue)"  id="blues" class="colors"></li>
+                            <li onclick="show(pink)" id="pinks" class="colors"></li>
+                            <li onclick="show(purple)" id="purples" class="colors"></li>
+                            <li onclick="show(red)" id="reds" class="colors"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Features</h3>
+                        <button onclick="displayTime()"  id="time">time</button>
+                        <button onclick="displayHeartbeat()"  id="heart">heart rate</button>
+                    </li>
+            </ul>
+                <button id="buy">BuyNow</button>
+            </div>
+        </section>
+    </main>
+        
+        <script src="smartphone.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(66, 213, 250);
+    color: white;
+  }
+  #container{
+    margin: 50px auto;
+    padding: 20px 30px;
+    max-width: 400px;  
+    color: grey;
+    background-color: aliceblue;
+    border-radius: 10px;
+    filter: blur(100%);
+    
+}
+.forms{
+    margin-top: 5px;
+}
+
+  .formupper {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .forms, input {
+    width: 100%;
+  border-radius: 5px;
+ 
+
+  }
+  .container,button{
+    background-color: lightgreen;
+    color: whitesmoke;
+    
+    width: 100%;
+    border-radius: 5px;
+    
+  }
+  button:hover{
+    background-color: wheat;
+    color: black;
+  }
+  .bottomtext{
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  .formbottom{
+    text-align: center;
+    margin-top: -30px;
+  }
+
+
+    </style>
+
+    <div id="container">
+    <div class="formupper">
+     <h1>Sign Up</h1>
+     <p>its free and only take a minute</p>
+    </div>
+    <form>
+    <div class="forms">
+<label for="first name">first name</label><br>
+ <input type="text" name="first name" id="first name">
+    </div><br>
+    <div class="forms">
+<label for="last name">last name</label><br>
+ <input type="text" name="last name" id="last name">
+    </div><br>
+    <div class="forms">
+<label for="email">email </label><br>
+<input type="text" name="email" id="email">
+    </div><br>
+    <div class="forms">
+<label for="password">password </label><br>
+ <input type="text" name="password" id="password">
+    </div><br>
+    <div class="forms">
+<label for="confirm password">confirm password</label><br>
+<input type="text" name="confirm password" id="confirm password">
+    </div><br>
+    <div class="forms">
+<button type="sign up">Sign Up</button>
+<p class="bottomtext"> 
+ by clicking the sign up button, you agree to our <br>
+ <a href="#">terms and conditions</a>
+ <a href="#">privacy policy</a>
+</p>
+    </div><br>
+</form>
+ </div>
+
+    <footer class="formbottom">
+<p>already have an account? <a href="#">login here</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+#showcase p{
+    padding: 10px;
+    line-height: none;
+    
+}
+#showcase{
+    padding: 25px;
+}
+
+#showcase h1{
+    font-size: 30px;
+    padding-top: none;
+    width: 100%;  
+}
+
+#homeinfo .imageinfo{
+    display: none;
+}
+#homeinfo .contentinfo{
+    width: 100%;
+    float: none;
+  
+}
+.box{
+    float: none;
+    width: 100%;
+}
+/* ----------------------------------------about page--------------------------------------------------------- */
+
+#info{
+    float: none;
+}
+#info .infoleft{
+    float: none ; 
+    width: 100% ; 
+    padding: 30px ;
+    
+}
+#info .inforight{
+    float: none ;
+      width: 100% ;
+}
+/* ---------------------oboud 2nd part--------------------------------------------------- */
+
+#textm{
+    width: 100%;
+    padding: 20px ;
+    height: 100% ;
+}
+/* ----------------------contact page ---------------------------------------------------------------- */
+
+#contacts{
+    padding: 20px;
+    
+}
+.contactf textarea{
+    height: 100px ;
+}
+.box1{
+    float: none ;
+    width: 100% ;
+    padding: 25px ;
+    
+}

@@ -1,0 +1,52 @@
+
+#faq {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#faq h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: burlywood;
+}
+.faq {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq summary {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #F9F9F9;
+    outline: none;
+    color: coral;
+}
+.faq summary:hover {
+    background-color: #F1F1F1;
+}
+.faq summary i {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+}
+details[open] summary i {
+    transform: rotate(180deg);
+}
+details[open] summary{
+   padding: 10px 0;
+}
+details[open] {
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    outline: none;
+    color: cornflowerblue;
+}

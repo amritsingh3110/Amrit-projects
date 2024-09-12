@@ -1,0 +1,56 @@
+
+body{
+  background-color: #144fc6;
+  text-align: center;
+  color: aliceblue;
+}
+#big-cup {
+  background-color: antiquewhite;
+  width: 100px;
+  height: 150px;
+  border: 2px solid coral;
+  border-radius: 0 0 10px 10px;
+  margin: 20px auto 30px;
+  position: relative;
+}
+
+#percentage {
+  background-color: #6ab3f8;
+  width: 100%;
+  height: 0;
+  place-content: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 8px 8px;
+  color: white;
+  text-align: center;
+  transition: all.5s;
+}
+
+#small-cups {
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cup-small {
+  background-color: antiquewhite;
+  width: 40px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid coral;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  color: coral;
+  font-size: 12px;
+}
+
+.cup-small.full {
+  background-color: #6ab3f8;
+  transition: all .5s;
+}

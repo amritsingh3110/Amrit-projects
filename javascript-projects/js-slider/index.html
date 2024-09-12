@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Card Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <div class="slide-container">
+            <div class="slide">
+                <div class="card">
+                    <!-- <img src="./img/card-product-back-1.webp" alt="Product 1"> -->
+                    <img src="./img/card-product-front-1.webp" alt="Product 1" 
+                    data-hover="./img/card-product-back-1.webp">
+                    <h2>Happy Drops</h2>
+                    <p class="review"><object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        196 Reviews</p>
+                    <p>These daily superfood gummies combine potent, clinically studied ingredients for natural mood-lifting, mental calmness, stress relief, and adaptogenic support.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <!-- <img src="./img/card-product-front-2.webp" alt="Product 2"> -->
+                    <img src="./img/card-product-front-2.webp" alt="Product 1" 
+                    data-hover="./img/card-product-back-2.webp">
+                    <h2>Green Juice</h2>
+                    <p class="review"><object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        2252 Reviews</p>
+                    <p>Ashwagandha (600mg) is clinically proven to reduce cortisol which reduces stress and food “cravings” and helps to achieve weight loss goals</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <!-- <img src="./img/card-product-front-3.webp" alt="Product 3"> -->
+                    <img src="./img/card-product-front-3.webp" alt="Product 1" 
+                    data-hover="./img/card-product-back-3.webp">
+                    <h2>Shilajit Gummies</h2>
+                    <p class="review"><object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        450 Reviews</p>
+                    <p>Recharge your cells and feel your whole body react with revitalized vigor and strength! Harness the ancient power of pure Himalayan Shilajit anytime you want with these convenient.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <!-- <img src="./img/card-product-front-4.webp" alt="Product 3"> -->
+                    <img src="./img/card-product-front-4.webp" alt="Product 1" 
+                    data-hover="./img/card-product-back-4.webp">
+                    <h2>Red juice</h2>
+                    
+                    <p class="review"><object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                         808 Reviews</p>
+                    <p>A fruity superfood punch to recharge your mind and body with natural energy,Beet Juice: Made from beets, it’s known for its deep red color and is often praised for its potential health benefits.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <!-- <img src="./img/card-product-front-5.webp" alt="Product 3"> -->
+                    <img src="./img/card-product-front-5.webp" alt="Product 1" 
+                    data-hover="./img/card-product-back-5.webp">
+                    <h2>Harmony</h2>
+                    <p class="review"><object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        <object type="image/svg+xml" data="./svg/star.svg"></object>
+                        605 Reviews</p>
+                    <p>This delicious cacao blend is designed to help balance and support hormones so you can feel great every single day of the month. Rich in natural antioxidants.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more cards as needed -->
+                 
+            </div>
+        </div>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>

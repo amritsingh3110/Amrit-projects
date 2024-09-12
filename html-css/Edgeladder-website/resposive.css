@@ -1,0 +1,75 @@
+
+.image img{
+  width: 100%;
+}
+
+.hero1{
+    flex-direction: column;
+}
+.flex-items{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;  
+}
+.hero2{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+    
+} 
+.division{
+    width: 100%;
+}
+.blog{
+    flex-direction: column;
+}
+.blog img{ 
+    width: 100%;
+}
+.teamcontent{
+    text-align: center;
+    width: 100%;
+}
+.teamdetails{
+    flex-direction: column; 
+}
+.teams img{
+    border-radius: 50%;
+    width: 80%;
+    
+}
+/* contact section */
+.contacts {
+    flex-direction: column;
+}
+
+.column img{
+    width: 100%;
+}
+
+
+/* navbar----------------------- */
+#navbar{
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+    justify-content: center;
+}
+.navbartop a{
+padding: 10px 20px;
+}
+
+/* -----------blog page1 setsing ---------------------------------------------------------------------------------- */
+.pages {
+flex-direction: column;
+}
+#blogs2 {
+    flex-direction: column;
+}
+#blogs3 {
+    flex-direction: column;
+   
+ }

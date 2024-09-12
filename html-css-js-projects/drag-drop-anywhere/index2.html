@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Drag and Drop Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section7 {
+    padding: 20px;
+}
+
+.s6-7container {
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: grab;
+}
+
+#container ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#container li {
+    min-width: 300px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#container img {
+    width: 100%;
+    height: auto;
+}
+
+.jacket-colors {
+    display: flex;
+    margin-top: 10px;
+}
+
+.jacket-colors .color {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+h4, h5, p {
+    margin: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <section class="section7">
+        <div id="container" class="s6-7container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./img/best-sellers/best-sellers.png" alt="best-sellers">
+                        <figcaption>
+                            <h2>NEW ARRIVALS</h2>
+                            <h3>SHOP MORE FRESH PICKS</h3>
+                        </figcaption>
+                    </figure>
+                    <h4>SHOP NEW SELLERS</h4>
+                </li>
+                <li>
+                    <img src="./img/best-sellers/patagonia-jacket.png" alt="Patagonia Men's Powder Town Jacket">
+                    <div class="jacket-colors">
+                        <img class="color color1" src="./img/best-sellers/jacket-color1.png" alt="jacket-color1">
+                        <img class="color color2" src="./img/best-sellers/jacket-color2.png" alt="jacket-color2">
+                        <img class="color color3" src="./img/best-sellers/jacket-color3.png" alt="jacket-color3">
+                        <img class="color color4" src="./img/best-sellers/jacket-color4.png" alt="jacket-color4">
+                        <img class="color color5" src="./img/best-sellers/jacket-color5.png" alt="jacket-color5">
+                    </div>
+                    <h5>Patagonia Men's Powder Town Jacket - Past Season</h5>
+                    <p>$173.99<strike>$349.00</strike></p>
+                </li>
+                <li>
+                    <img src="./img/best-sellers/canada-goose-jacket.png" alt="Canada Goose Men's Nanaimo Jacket">
+                    <div class="jacket-colors">
+                        <img class="color color1" src="./img/best-sellers/jacket-color1.png" alt="jacket-color1">
+                        <img class="color color2" src="./img/best-sellers/jacket-color2.png" alt="jacket-color2">
+                        <img class="color color3" src="./img/best-sellers/jacket-color3.png" alt="jacket-color3">
+                        <img class="color color4" src="./img/best-sellers/jacket-color4.png" alt="jacket-color4">
+                        <img class="color color5" src="./img/best-sellers/jacket-color5.png" alt="jacket-color5">
+                    </div>
+                    <h5>Canada Goose Men's Nanaimo Jacket</h5>
+                    <p>$575.00</p>
+                </li>
+                <li>
+                    <img src="./img/best-sellers/helly-hansen-jacket.png" alt="Helly Hansen Men's Alpha Lifaloft Jacket - Past Season">
+                    <div class="jacket-colors">
+                        <img class="color color1" src="./img/best-sellers/jacket-color1.png" alt="jacket-color1">
+                        <img class="color color2" src="./img/best-sellers/jacket-color2.png" alt="jacket-color2">
+                        <img class="color color3" src="./img/best-sellers/jacket-color3.png" alt="jacket-color3">
+                        <img class="color color4" src="./img/best-sellers/jacket-color4.png" alt="jacket-color4">
+                        <img class="color color5" src="./img/best-sellers/jacket-color5.png" alt="jacket-color5">
+                    </div>
+                    <h5>Helly Hansen Men's Alpha Lifaloft Jacket - Past Season</h5>
+                    <p>$275.99<strike>$550.00</strike></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script >
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('#container');
+    let isDragging = false;
+    let startX, scrollLeft;
+
+    container.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+        container.style.cursor = 'grabbing';
+    });
+
+    container.addEventListener('mouseleave', () => {
+        isDragging = false;
+        container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('mouseup', () => {
+        isDragging = false;
+        container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scroll speed
+        container.scrollLeft = scrollLeft - walk;
+    });
+
+    // For touch devices
+    container.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+    });
+
+    container.addEventListener('touchend', () => {
+        isDragging = false;
+    });
+
+    container.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - container.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scroll speed
+        container.scrollLeft = scrollLeft - walk;
+    });
+
+    // Set the cursor style initially
+    container.style.cursor = 'grab';
+});
+
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .s9container {
+  display: flex;
+  overflow: hidden;
+  cursor: grab;
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+}
+
+.s9container img {
+  height: 100px; /* Adjust size as needed */
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+        </style>
+    </head>
+    <body>
+    
+<section class="section9">
+    <h2>Discover the Best Outdoors Fashion Brands</h2>
+    <div id="container" class="s9container">
+        <img src="./img/logos/patagonia.png" alt="patagonia">
+        <img src="./img/logos/canada-goose.png" alt="canada-goose">
+        <img src="./img/logos/the-north-face.png" alt="the-north-face">
+        <img src="./img/logos/prana.png" alt="prana">
+        <img src="./img/logos/kuhl.png" alt="kuhl">
+        <img src="./img/logos/carve-design.png" alt="carve-design">
+        <img src="./img/logos/birkenstock.png" alt="birkenstock">
+        <img src="./img/logos/helly-hansen.png" alt="helly-hansen">
+        <img src="./img/logos/indyeva.png" alt="indyeva">
+        <img src="./img/logos/reef.png" alt="reef">
+        <img src="./img/logos/rab.png" alt="rab">
+        <img src="./img/logos/stanley.png" alt="stanley">
+      <!-- Add other images here -->
+    </div>
+    <button id="btn">VIEW ALL</button>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.s9container');
+  let isDragging = false;
+  let startX, scrollLeft;
+
+  container.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+    container.style.cursor = 'grabbing';
+  });
+
+  container.addEventListener('mouseleave', () => {
+    isDragging = false;
+    container.style.cursor = 'grab';
+  });
+
+  container.addEventListener('mouseup', () => {
+    isDragging = false;
+    container.style.cursor = 'grab';
+  });
+
+  container.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    container.scrollLeft = scrollLeft - walk;
+  });
+});
+
+  </script>
+    </body>
+</html>
+  

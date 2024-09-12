@@ -1,0 +1,1016 @@
+
+:root{
+    --prmary-color: #F6683F;
+    --secondary-color: #FDF8F8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background: #FFFFFF;
+}
+@mixin leftright{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    .a {
+        grid-area: a;
+      }
+      .b {
+        grid-area: b;
+      }
+      .c {
+        grid-area: c;
+      }
+      .d {
+        grid-area: d;
+      }
+      .e {
+        grid-area: e;
+      }
+      .f {
+        grid-area: f;
+      }
+    grid-template-areas: "a ."
+                         ". b"
+                         "c ."
+                         ". d"
+                         "e ."
+                         ". f";
+    gap: 20px;
+}
+.current{
+    color: var(--prmary-color);
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.hero{
+position: absolute;
+width: 100%;
+    .navbar{
+        
+        width: 1170px;
+        margin: auto;
+         height: 88px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            color: #000;
+            font-size: 32px;
+            font-weight: 700;
+            padding: 40px 0 11px;
+        }
+        a{
+            font-size: 16px;
+            font-weight: 700;
+        }
+       ul{
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 31px;
+       }
+    }
+
+      
+    ul li {
+        padding: 51px  17px 22px;
+    }
+    .lic{
+          background: var(--prmary-color);
+          
+          border-radius: 0px 0px 8px 8px;
+          a{
+            color: #FFF;
+          }
+    }
+
+}
+
+// section first
+.section1{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1{
+        font-size: 80px;
+        font-weight: 700;
+    }d
+    p{
+        margin: 32px 410px 0;
+        font-size: 28px;
+        font-weight: 400;
+        display: inline-block;
+    }
+    span{
+        margin-top: 67px;
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+    }
+}
+
+// SECTION 2 AREA----------------------------------------------------------------------
+
+    .s2container{
+        width: 1170px;
+        margin: 120px auto  ;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .imgcontent{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .s2ic{
+
+        p{
+            font-family: "GT Walsheim Pro";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;   
+        }
+    }
+    .s2i{
+        text-align: center;
+    }
+    .content{
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27.2px; 
+        
+    }
+
+// SECTION 3 AREA------------------------------------------------------------------------------------
+
+.scontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        text-align: center;
+        h2{
+            margin-top: 80px;
+            font-family: "GT Walsheim Pro";
+            font-size: 48px;
+            font-weight: 700;
+        }
+        p{
+            margin-bottom: 40px;
+            font-family: Mulish;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+// boxes area section 3
+.boxes{
+        max-width: 1170px;
+        margin: 80px auto ;
+       @include leftright;
+}
+    .box{
+       display: flex;
+       flex-direction: row;
+        gap: 30px; 
+        
+        span{
+            font-family: "GT Walsheim Pro";
+            font-size: 32px;
+            font-weight: 700;
+        }
+        p{
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px ;
+            
+        }
+        .boxc{
+            padding-left: 30px;
+            border-left: var(--prmary-color) 1px solid;
+        }
+    }
+
+
+// section 4---------------------------------------------------------------------------------------------------
+.section4{
+    max-width: 1170px;
+    margin: 0 auto;
+    .s4bottom1{
+        text-align: center;
+        margin: 80px auto 80px;
+        span{
+            font-family: Mulish;
+            font-size: 24px;
+            font-weight: 400;
+        }   
+    }
+    .s4link{
+        text-align: center;
+        a{
+            background: #000;
+            color: #FFF;
+            font-family: "GT Walsheim Pro";
+            font-size: 20px;
+             font-weight: 700;
+             padding: 20px 56px;
+         }
+     }
+}
+.cards{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    gap: 135px;
+    justify-items: center;
+    .card{
+        display: flex;
+        width: 300px;
+        padding: 60px 92px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        border-radius: 24px;
+        background:#FFF;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
+        span{
+            font-family: "GT Walsheim Pro";
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px; /* 112.5% */
+        }
+    }
+}
+// section5 area--------------------------------------------------------------------------------------------------
+   .s5box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    .dabba{
+            display: flex;
+            flex-direction: column;
+            margin: 80px auto;
+            gap: 30px;
+            width: 100%;
+            text-align: center;
+            .dabbaimg{
+                span{
+                    font-family: "GT Walsheim Pro";
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                bottom: 48%;
+                // right: 32%;
+            }
+            }
+            .emoji{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 16px;
+                p{
+                    font-family: "GT Walsheim Pro";
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+    }
+   }
+
+//    SECTION 6 INDUSTRY AREA--------------------------------------------------------------------------------------------------------------------------
+
+.industry{
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 120px;
+
+    .icard{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        .line{
+            width: 20px;
+            height: 4px;
+            background: var(--prmary-color);
+            align-self: center;
+        }
+        span{
+            font-family: "GT Walsheim Pro";
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}
+
+// SECTION 7 choose AREA-----------------------------------------------------------------------------------------------------------------------------------
+
+.choose{
+    max-width: 1170px;
+    margin: 80px auto;
+   @include leftright;
+
+    .choosecard{
+        // width: 50%;
+    display: flex;
+    flex-direction: row;
+        gap: 40px;
+        .choosecontent{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-self: center;
+            span{
+                font-family: "GT Walsheim Pro";
+                font-size: 32px;
+                font-weight: 700;
+            }
+            p{
+                font-family: Mulish;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px      
+        }
+
+    }
+}
+}
+// SECTION 8 ENJOY LIFE AREA-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.section8{
+    width: 1170px;
+    margin: 0 auto;
+    background: Orange;
+}
+.s8content{
+    width: 100%;
+    margin: 17px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+        .dcontainer{
+            
+            margin: 98px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+       
+        h3{
+            font-family: "GT Walsheim Pro";
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px; /* 112.5% */
+        }
+        p{
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 170%; /* 27.2px */
+        }
+    }
+    .s8img{
+        text-align: center;
+    }
+
+    a{
+        color: #FFF;
+        align-items: center;
+        /* Button */
+        font-family: "GT Walsheim Pro";
+        font-size: 20px;
+        font-weight: 700;
+        background: #000;
+        padding: 20px 56px;
+        border-radius: 5px;
+    }
+}
+.button{
+    display: inline-block;
+    align-self: center;
+}
+
+// SECTION 9 faq area-------------------------------------------------------------------------------------------------------------------------------------------------------------
+.s9container{
+    max-width: 1170px;
+    margin: 120px auto;
+    .faq{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: var(--prmary-color) 1px solid;
+        align-items: center;
+    }
+}
+.s9heading{
+    text-align: center;
+    h2{
+        margin: 120px auto 0 ;
+    }
+}
+
+// SECTION 10 CONTACT PAGE AREA------------------------------------------------------------------------------------------------------------------------------------------------------
+.section10{
+    background: var(--secondary-color);
+    padding-bottom: 120px;
+}
+.s10heading{
+    text-align: center;
+    padding-top: 120px;
+    h2{
+        font-family: "GT Walsheim Pro";
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+// FORM PART
+.s10container{
+    max-width: 570px;
+    margin: 60px auto 0;
+    
+    background: #FFF;
+    .top{
+        padding-top: 50px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        h3{
+            color: light #000;
+            /* Sub Header 2 */
+            font-family: Mulish;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 36px; /* 150% */
+
+        }
+    }
+}
+.form{
+    max-width: 430px;
+    margin: 32px auto 0;
+    .inputs{
+        text-align: end;
+        input,textarea{
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            width: 100%;
+            background: var(--secondary-color);
+                    padding: 23px 24px;        
+        }
+        img{
+            position: relative;
+                right: 24px;
+                bottom: 47px;
+        }
+        .imge{
+            position: relative;
+                right: 24px;
+                bottom: 260px;
+        }
+    }
+    .link{
+        display: flex;
+        width: 430px;
+        padding: 20px 56px;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        border-radius: 8px;
+        background:  #000;
+        font-family: "GT Walsheim Pro";
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 51px;
+    }
+        
+    }
+
+// LAST PART    FOOTER    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+footer{
+    width: 100%;
+    background: #000;
+    color: #FFF;
+    padding: 51px 91px;
+}
+.fheader{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fheading{
+    width: 728px;
+    margin: 126px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    .upper{
+        width: 728px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+       
+        h3{
+            font-family: "GT Walsheim Pro";
+            font-size: 64px;
+            font-weight: 700;
+        }
+        span{
+            font-family: Mulish;
+            font-size: 16px;
+
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+
+        }
+    }
+    a{
+        color: #FFF;
+        border: #FFF 1px solid;
+        display: flex;
+        margin: 0 auto;
+        padding: 20px 56px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+// MAIN FOOTER
+.fmain{
+    margin: 127px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    a{
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+    }
+    .a{
+        width: 224px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        h3{
+            font-family: "GT Walsheim Pro";
+            font-size: 32px;
+            font-weight: 700;
+        }
+        p{
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+    }
+    .b{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .b1{
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+    }
+    .c{
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 94px;
+        grid-row-gap: 16px;
+    }
+}
+}
+// last social part
+.fsocial{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+// end
+.arrow{
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+// MEDIA QUERIES----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 1200px){
+    .hero{
+        .navbar{
+             width: 800PX;
+             margin: O auto;
+             .logo{
+                font-size: 22px;
+                padding: 0;
+             }
+             a{
+                font-size: 11px;
+             }
+            ul{
+                gap: 3px;
+            }
+            ul li {
+                padding: 40px 15px 10px;
+            }
+        }
+    }
+    // SECTION 2 AREA----------------------------------------------------------------------
+    .scontainer {
+        width: 800px;
+        margin: auto;
+    }
+    .s2container{
+        width: 800px;
+    }
+    // boxes area section 3
+.boxes{
+    width: 800px;
+    margin: auto;
+}
+// section 4---------------------------------------------------------------------------------------------------
+.section4{
+    max-width: 800px;
+    
+    margin: 0 auto;
+}
+.cards{ 
+    width: 100%;
+    margin: auto;
+    gap: 70px;
+    .card{
+        width: 200px;
+    }
+}
+// section5 area--------------------------------------------------------------------------------------------------
+.section5{
+    
+    width: 100%;
+    margin: auto;
+    .dabbaimg{
+        img{
+            width: 240px;
+            height: 250px;
+        }
+    }
+}
+
+
+//    SECTION 6 INDUSTRY AREA--------------------------------------------------------------------------------------------------------------------------
+
+.industry{
+    width: 800px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+// SECTION 7 choose AREA-----------------------------------------------------------------------------------------------------------------------------------
+
+.choose{
+    max-width: 800px;
+    margin: auto;
+}
+
+// SECTION 8 ENJOY LIFE AREA-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.section8{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    a{
+        color: #FFF;
+        padding: 10px 30px;
+         font-size: 15px; 
+    }
+}
+
+// SECTION 9 faq area-------------------------------------------------------------------------------------------------------------------------------------------------------------
+.s9container{
+    max-width: 800px;
+    margin:  auto;
+}
+
+// LAST PART    FOOTER    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+footer{
+    padding: 31px 61px;
+}
+.fheader{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 10px;
+}
+// MAIN FOOTER
+.fmain{
+    margin: 127px auto;
+    .a{
+        width: 112px;
+    }
+    .b{
+        gap: 8px;
+        .b1{
+            gap: 8px;
+        }
+    }
+    .c{
+        grid-column-gap: 22px;
+        grid-row-gap: 8px;
+    }
+ }
+}
+
+
+// MEDIA QUERIES  2 part 800PX----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 850px){
+.hero{
+    width: 100%;
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        
+        max-width: 100%;
+         margin: O auto;
+        ul li {
+            padding: 10px 10px 10px;
+        }
+    }
+}
+// SECTION 2 AREA----------------------------------------------------------------------
+.scontainer {
+    width: 400px;
+    margin: auto;
+}
+.s2container{
+    width: 400px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+}
+
+
+// boxes area section 3
+.boxes{
+    max-width: 400px;
+    margin: auto ;
+    display: flex;
+    flex-direction: column;   
+    gap: 20px;
+}
+// cards area section 4
+.section4{
+    width: 400px;
+  .cards{ 
+    width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+}
+
+// section5 area--------------------------------------------------------------------------------------------------
+.s5box{
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+
+}
+//    SECTION 6 INDUSTRY AREA--------------------------------------------------------------------------------------------------------------------------
+
+.industry{
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+// SECTION 7 choose AREA-----------------------------------------------------------------------------------------------------------------------------------
+
+.choose{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+// SECTION 8 ENJOY LIFE AREA-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.section8{
+    width: 400px;
+    margin: auto;
+    background-color: #FFF;
+}
+.s8content{
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+// SECTION 8 AREA
+.s9heading{
+    h2{
+        width: 400px;
+        margin: 40px auto;
+    }
+}
+.s9container {
+    width: 400px; 
+   margin: auto;
+}
+
+
+// formpart
+.s10container{
+    width: 400px;
+    margin: auto ;
+}
+.form{
+    width: 400px;
+    margin: auto;
+    input{
+        width: 100%;
+        padding: 11px 12px;
+    }
+    .link{
+        width: 300px;
+    }
+}
+
+
+// LAST PART    FOOTER    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.fheader{
+    text-align: center;
+    margin:  20px auto 30px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    img{
+        width: 100px;
+    }
+}
+.fheading{
+    
+    width: 400px;
+    margin: auto ;
+    .upper{
+        width: 400px;
+        h3{
+            font-size: 32px;
+        }
+    }
+
+    
+}
+
+// MAIN FOOTER
+.fmain{
+    margin:  20px auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 20px;
+    text-align: center;
+}
+// last social part
+.fsocial{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.limage{
+    display: none;
+}
+
+}
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 500px){
+    footer{
+    min-width: 400px;
+   }
+   .hero{
+    min-width: 400px;
+   margin: auto;
+   }
+   .navbar{
+    min-width: 400px;
+    margin: auto;
+        
+   }
+   .section1{
+    min-width: 400px;
+    
+   }
+  
+// SECTION4 AREA--------------------------------------------------------------------------------------
+
+.section4{
+    .cards{
+        
+        grid-template-columns: repeat(1,1fr); 
+    }
+}
+.section10{
+    width: 400px;
+    margin: auto;
+   background-color: #FFF;
+   h2{
+    width: 300px;
+    margin: auto;
+   }
+    .s10container{
+        width: 300px;
+        margin: auto;
+        .top{
+            width: 200px;
+            margin: auto;
+            padding-top: 10px;
+        }
+    }
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+// --------footer------------------------------------------------------------------------
+.fheader{
+     width: 100%;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    img{
+        width: 100px;
+    }
+}
+.fheading {
+    display: none;
+    width: 200px;
+    margin: auto;
+    .upper{
+            width: 200px;
+            margin: auto;
+            h3{
+                display: none;
+                font-size: 10px;
+            }
+        }
+}
+
+    
+.fsocial{
+    margin-top: 20px;
+    width: 300px;
+}
+.fmain{
+    
+    .a,.b,.b {text-align: center;
+        margin: auto;
+        h3{
+        font-size: 20px;
+    }
+    }
+}
+
+}
+

@@ -1,0 +1,909 @@
+:root {
+  --prmary-color: #F6683F;
+  --secondary-color: #FDF8F8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+.current {
+  color: var(--prmary-color);
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hero {
+  position: absolute;
+  width: 100%;
+}
+.hero .navbar {
+  width: 1170px;
+  margin: auto;
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .navbar .logo {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 40px 0 11px;
+}
+.hero .navbar a {
+  font-size: 16px;
+  font-weight: 700;
+}
+.hero .navbar ul {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 31px;
+}
+.hero ul li {
+  padding: 51px 17px 22px;
+}
+.hero .lic {
+  background: var(--prmary-color);
+  border-radius: 0px 0px 8px 8px;
+}
+.hero .lic a {
+  color: #FFF;
+}
+
+.section1 {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section1 h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+.section1 d p {
+  margin: 32px 410px 0;
+  font-size: 28px;
+  font-weight: 400;
+  display: inline-block;
+}
+.section1 span {
+  margin-top: 67px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.s2container {
+  width: 1170px;
+  margin: 120px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.imgcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.s2ic p {
+  font-family: "GT Walsheim Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.s2i {
+  text-align: center;
+}
+
+.content {
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+
+.scontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  text-align: center;
+}
+.scontainer h2 {
+  margin-top: 80px;
+  font-family: "GT Walsheim Pro";
+  font-size: 48px;
+  font-weight: 700;
+}
+.scontainer p {
+  margin-bottom: 40px;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.boxes {
+  max-width: 1170px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "a ." ". b" "c ." ". d" "e ." ". f";
+  gap: 20px;
+}
+.boxes .a {
+  grid-area: a;
+}
+.boxes .b {
+  grid-area: b;
+}
+.boxes .c {
+  grid-area: c;
+}
+.boxes .d {
+  grid-area: d;
+}
+.boxes .e {
+  grid-area: e;
+}
+.boxes .f {
+  grid-area: f;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.box span {
+  font-family: "GT Walsheim Pro";
+  font-size: 32px;
+  font-weight: 700;
+}
+.box p {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+.box .boxc {
+  padding-left: 30px;
+  border-left: var(--prmary-color) 1px solid;
+}
+
+.section4 {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.section4 .s4bottom1 {
+  text-align: center;
+  margin: 80px auto 80px;
+}
+.section4 .s4bottom1 span {
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+}
+.section4 .s4link {
+  text-align: center;
+}
+.section4 .s4link a {
+  background: #000;
+  color: #FFF;
+  font-family: "GT Walsheim Pro";
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 56px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 80px auto;
+  text-align: center;
+  gap: 135px;
+  justify-items: center;
+}
+.cards .card {
+  display: flex;
+  width: 300px;
+  padding: 60px 92px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.06);
+}
+.cards .card span {
+  font-family: "GT Walsheim Pro";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+}
+
+.s5box {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.s5box .dabba {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  gap: 30px;
+  width: 100%;
+  text-align: center;
+}
+.s5box .dabba .dabbaimg span {
+  font-family: "GT Walsheim Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 48%;
+}
+.s5box .dabba .emoji {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+.s5box .dabba .emoji p {
+  font-family: "GT Walsheim Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.industry {
+  width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 120px;
+}
+.industry .icard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+.industry .icard .line {
+  width: 20px;
+  height: 4px;
+  background: var(--prmary-color);
+  align-self: center;
+}
+.industry .icard span {
+  font-family: "GT Walsheim Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.choose {
+  max-width: 1170px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "a ." ". b" "c ." ". d" "e ." ". f";
+  gap: 20px;
+}
+.choose .a {
+  grid-area: a;
+}
+.choose .b {
+  grid-area: b;
+}
+.choose .c {
+  grid-area: c;
+}
+.choose .d {
+  grid-area: d;
+}
+.choose .e {
+  grid-area: e;
+}
+.choose .f {
+  grid-area: f;
+}
+.choose .choosecard {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.choose .choosecard .choosecontent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: center;
+}
+.choose .choosecard .choosecontent span {
+  font-family: "GT Walsheim Pro";
+  font-size: 32px;
+  font-weight: 700;
+}
+.choose .choosecard .choosecontent p {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+
+.section8 {
+  width: 1170px;
+  margin: 0 auto;
+  background: Orange;
+}
+
+.s8content {
+  width: 100%;
+  margin: 17px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.s8content .dcontainer {
+  margin: 98px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.s8content .dcontainer h3 {
+  font-family: "GT Walsheim Pro";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+}
+.s8content .dcontainer p {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.s8content .s8img {
+  text-align: center;
+}
+.s8content a {
+  color: #FFF;
+  align-items: center;
+  /* Button */
+  font-family: "GT Walsheim Pro";
+  font-size: 20px;
+  font-weight: 700;
+  background: #000;
+  padding: 20px 56px;
+  border-radius: 5px;
+}
+
+.button {
+  display: inline-block;
+  align-self: center;
+}
+
+.s9container {
+  max-width: 1170px;
+  margin: 120px auto;
+}
+.s9container .faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: var(--prmary-color) 1px solid;
+  align-items: center;
+}
+
+.s9heading {
+  text-align: center;
+}
+.s9heading h2 {
+  margin: 120px auto 0;
+}
+
+.section10 {
+  background: var(--secondary-color);
+  padding-bottom: 120px;
+}
+
+.s10heading {
+  text-align: center;
+  padding-top: 120px;
+}
+.s10heading h2 {
+  font-family: "GT Walsheim Pro";
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.s10container {
+  max-width: 570px;
+  margin: 60px auto 0;
+  background: #FFF;
+}
+.s10container .top {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+.s10container .top h3 {
+  color: light #000;
+  /* Sub Header 2 */
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+
+.form {
+  max-width: 430px;
+  margin: 32px auto 0;
+}
+.form .inputs {
+  text-align: end;
+}
+.form .inputs input, .form .inputs textarea {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 23px 24px;
+}
+.form .inputs img {
+  position: relative;
+  right: 24px;
+  bottom: 47px;
+}
+.form .inputs .imge {
+  position: relative;
+  right: 24px;
+  bottom: 260px;
+}
+.form .link {
+  display: flex;
+  width: 430px;
+  padding: 20px 56px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border-radius: 8px;
+  background: #000;
+  font-family: "GT Walsheim Pro";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 51px;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  color: #FFF;
+  padding: 51px 91px;
+}
+
+.fheader {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fheading {
+  width: 728px;
+  margin: 126px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+}
+.fheading .upper {
+  width: 728px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.fheading .upper h3 {
+  font-family: "GT Walsheim Pro";
+  font-size: 64px;
+  font-weight: 700;
+}
+.fheading .upper span {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.fheading a {
+  color: #FFF;
+  border: #FFF 1px solid;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 56px;
+  text-align: center;
+  justify-content: center;
+}
+
+.fmain {
+  margin: 127px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.fmain a {
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.fmain .a {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.fmain .a h3 {
+  font-family: "GT Walsheim Pro";
+  font-size: 32px;
+  font-weight: 700;
+}
+.fmain .a p {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.fmain .b {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.fmain .b .b1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.fmain .c ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 94px;
+  grid-row-gap: 16px;
+}
+
+.fsocial {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.arrow {
+  text-align: end;
+}
+
+@media (max-width: 1200px) {
+  .hero .navbar {
+    width: 800PX;
+    margin: O auto;
+  }
+  .hero .navbar .logo {
+    font-size: 22px;
+    padding: 0;
+  }
+  .hero .navbar a {
+    font-size: 11px;
+  }
+  .hero .navbar ul {
+    gap: 3px;
+  }
+  .hero .navbar ul li {
+    padding: 40px 15px 10px;
+  }
+  .scontainer {
+    width: 800px;
+    margin: auto;
+  }
+  .s2container {
+    width: 800px;
+  }
+  .boxes {
+    width: 800px;
+    margin: auto;
+  }
+  .section4 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .cards {
+    width: 100%;
+    margin: auto;
+    gap: 70px;
+  }
+  .cards .card {
+    width: 200px;
+  }
+  .section5 {
+    width: 100%;
+    margin: auto;
+  }
+  .section5 .dabbaimg img {
+    width: 240px;
+    height: 250px;
+  }
+  .industry {
+    width: 800px;
+    margin: 0 auto;
+    gap: 60px;
+  }
+  .choose {
+    max-width: 800px;
+    margin: auto;
+  }
+  .section8 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section8 a {
+    color: #FFF;
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .s9container {
+    max-width: 800px;
+    margin: auto;
+  }
+  footer {
+    padding: 31px 61px;
+  }
+  .fheader {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+  }
+  .fmain {
+    margin: 127px auto;
+  }
+  .fmain .a {
+    width: 112px;
+  }
+  .fmain .b {
+    gap: 8px;
+  }
+  .fmain .b .b1 {
+    gap: 8px;
+  }
+  .fmain .c {
+    grid-column-gap: 22px;
+    grid-row-gap: 8px;
+  }
+}
+@media (max-width: 850px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .navbar {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin: O auto;
+  }
+  .hero .navbar ul li {
+    padding: 10px 10px 10px;
+  }
+  .scontainer {
+    width: 400px;
+    margin: auto;
+  }
+  .s2container {
+    width: 400px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .boxes {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section4 {
+    width: 400px;
+  }
+  .section4 .cards {
+    width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .s5box {
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .industry {
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .choose {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section8 {
+    width: 400px;
+    margin: auto;
+    background-color: #FFF;
+  }
+  .s8content {
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .s9heading h2 {
+    width: 400px;
+    margin: 40px auto;
+  }
+  .s9container {
+    width: 400px;
+    margin: auto;
+  }
+  .s10container {
+    width: 400px;
+    margin: auto;
+  }
+  .form {
+    width: 400px;
+    margin: auto;
+  }
+  .form input {
+    width: 100%;
+    padding: 11px 12px;
+  }
+  .form .link {
+    width: 300px;
+  }
+  .fheader {
+    text-align: center;
+    margin: 20px auto 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .fheader img {
+    width: 100px;
+  }
+  .fheading {
+    width: 400px;
+    margin: auto;
+  }
+  .fheading .upper {
+    width: 400px;
+  }
+  .fheading .upper h3 {
+    font-size: 32px;
+  }
+  .fmain {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    text-align: center;
+  }
+  .fsocial {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .limage {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    min-width: 400px;
+  }
+  .hero {
+    min-width: 400px;
+    margin: auto;
+  }
+  .navbar {
+    min-width: 400px;
+    margin: auto;
+  }
+  .section1 {
+    min-width: 400px;
+  }
+  .section4 .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section10 {
+    width: 400px;
+    margin: auto;
+    background-color: #FFF;
+  }
+  .section10 h2 {
+    width: 300px;
+    margin: auto;
+  }
+  .section10 .s10container {
+    width: 300px;
+    margin: auto;
+  }
+  .section10 .s10container .top {
+    width: 200px;
+    margin: auto;
+    padding-top: 10px;
+  }
+  .form {
+    width: 100%;
+    margin: auto;
+  }
+  .fheader {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .fheader img {
+    width: 100px;
+  }
+  .fheading {
+    display: none;
+    width: 200px;
+    margin: auto;
+  }
+  .fheading .upper {
+    width: 200px;
+    margin: auto;
+  }
+  .fheading .upper h3 {
+    display: none;
+    font-size: 10px;
+  }
+  .fsocial {
+    margin-top: 20px;
+    width: 300px;
+  }
+  .fmain .a, .fmain .b, .fmain .b {
+    text-align: center;
+    margin: auto;
+  }
+  .fmain .a h3, .fmain .b h3, .fmain .b h3 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+body {
+  background: skyblue;
+}
+
+header nav .abc {
+  position: absolute;
+  background-color: purple;
+  z-index: 1;
+}
+header nav .show {
+  transform: translateX(0);
+}
+header nav .hide {
+  transform: translateX(-1500px);
+}
+header nav ul {
+  background: #fff;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  transition: all 1s ease-in-out;
+}
+header nav ul li {
+  padding: 20px;
+  background: wheat;
+  text-align: center;
+  width: 100%;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
