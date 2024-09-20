@@ -1,5 +1,19 @@
 
-
+// add banner
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.shipping-slide');
+    const sliderContent = document.querySelector('.shipping-slider-content');
+    let index = 0;
+  
+    const updateSlide = (direction) => {
+      index = (index + direction + slides.length) % slides.length;
+      sliderContent.style.transform = `translateX(-${index * 100}%)`;
+    };
+  
+    document.querySelector('.left-arrow').addEventListener('click', () => updateSlide(-1));
+    document.querySelector('.right-arrow').addEventListener('click', () => updateSlide(1));
+  });
+  
     // HAMBURGER MENU 
 let line = document.querySelector('.hamburger-menu--line');
 let line1 = document.querySelector('.hamburger-menu-line--top')
@@ -27,11 +41,6 @@ menu.addEventListener('click', function() {
         }, 10); 
     }
 });
-
-
-
-
-
 
     // slider  ---------------------------------
 let currentSlide = 0;
@@ -85,7 +94,6 @@ jacketcolor.forEach(color => {
 //          viewall.innerHTML = 'VIEW ALL'
 //     }
 // });
-
 
 let viewall = document.querySelector('#view-all');
 let container = document.querySelector('#nextslide');
