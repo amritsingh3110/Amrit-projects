@@ -436,6 +436,7 @@ figcaption .shop-now:hover {
 
 .carousel-item img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -556,7 +557,7 @@ figcaption .shop-now:hover {
   line-height: 130%; /* 23.4px */
 }
 .product-container ul li p strike {
-  color: #787A80;
+  color: var(--primary2-color);
   margin-left: 15px;
 }
 .product-container ul li .color {
@@ -685,6 +686,9 @@ figcaption .shop-now:hover {
 .latest-stories .stories-container .slide {
   position: relative;
   overflow: hidden;
+}
+.slide label{
+  display: none;
 }
 .latest-stories .stories-container .slide #slide1, .latest-stories .stories-container .slide #slide2, .latest-stories .stories-container .slide #slide3 {
   position: absolute;
@@ -847,6 +851,9 @@ figcaption .shop-now:hover {
 }
 .footer  {
   color: #ccc;
+}
+.privacy a{
+  text-decoration: underline;
 }
 .footer .footer-container .contact-us .social-icons,
 .footer .footer-container .subscribe .social-icons {
