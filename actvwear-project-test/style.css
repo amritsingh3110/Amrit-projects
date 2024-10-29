@@ -585,7 +585,7 @@
         height: auto;
        }
        .blog-grid .blog-text{
-        padding: 30px 95px 30px 30px;
+        padding: 25px 46px 25px 20px;
         margin-top: -3px;
         background-color: var(--lighr-grey-color);
        }
@@ -988,6 +988,10 @@ gap: 20px;
 .payment-options{
 gap: 10px;
 }
+.blog-grid .blog-text{
+  padding: 30px 95px 30px 30px;
+  margin-top: -3px;
+ }
     }
   /* Styles for screens that are at least 1320px wide ---------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 1320px) {
