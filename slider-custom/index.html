@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .container {
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .slide {
+      min-width: 320px;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    .head-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .controls {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="head-container">
+    <h2>Camping Category</h2>
+    <div class="controls">
+      <button type="button" class="left">←</button>
+      <button type="button" class="right">→</button>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="slider">
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+      <li class="slide">
+        <img src="../actvwear-project-test/img/categories/Hiking-Gear.png" alt="Hiking Gear" loading="lazy">
+        <h3>Hiking Gear</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const leftBtn = document.querySelector('.left');
+  const rightBtn = document.querySelector('.right');
+  const controls = document.querySelector('.controls');
+  let currentSlide = 0;
+
+  // Function to update slider transform
+  function updateSlider() {
+    const slideWidth = slides[0].offsetWidth; // Get the width of one slide
+    slider.style.transform = `translateX(-${currentSlide * (slideWidth + 10)}px)`; // Include gap in calculation
+  }
+  // Function to initialize the slider if slides > 4
+  function initializeSlider() {
+    if (slides.length > 4) {
+      controls.style.display = "block"; // Show controls
+      rightBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent form submission
+        if (currentSlide < slides.length - 4) { // Adjust condition to stop at the last visible slide
+          currentSlide++;
+        } else {
+          currentSlide = 0; // Loop back to the first slide
+        }
+        updateSlider();
+      });
+      leftBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent form submission
+        if (currentSlide > 0) {
+          currentSlide--;
+        } else {
+          currentSlide = slides.length - 4; // Loop back to the last visible slide
+        }
+        updateSlider();
+      });
+      window.addEventListener('resize', updateSlider); // Update on resize
+      updateSlider(); // Initialize the slider
+    } else {
+      controls.style.display = "none"; // Hide controls if slides <= 4
+      slider.style.transform = 'translateX(0)'; // Reset slider position
+    }
+  }
+
+  // Initialize the slider logic
+  initializeSlider();
+</script>
+
+</body>
+</html>
